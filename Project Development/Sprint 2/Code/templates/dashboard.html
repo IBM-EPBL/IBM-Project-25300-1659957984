@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Cognos dashboard</title>
+		<style>
+			body {
+				background-color: wheat;
+			}
+			.main-container {
+				background: #e27d60;
+				width: 80%;
+				margin: 0 auto;
+				min-height: 95vh;
+			}
+			h3 {
+				color: white;
+				text-shadow: 2px 2px #ff0000;
+				text-align: center;
+			}
+			.dashboard {
+				display: flex;
+				align-items: center;
+			}
+			iframe {
+				margin: 0 auto;
+				max-width: 80%;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="main-container">
+			<marquee>
+				Please enable any pop-up blocked and sign in to your IBM account
+			</marquee>
+			<h3>
+				This dashboard needs you to have a IBM account. So please create one if
+				you don't have any.
+			</h3>
+			<div class="dashboard">
+				<iframe
+					src="https://sa1.ca.analytics.ibm.com/bi/?perspective=dashboard&amp;pathRef=.my_folders%2FInteractive%2BDashboard&amp;closeWindowOnLastView=true&amp;ui_appbar=false&amp;ui_navbar=false&amp;shareMode=embedded&amp;action=view&amp;mode=dashboard&amp;subView=model0000018467041204_00000000"
+					width="800"
+					height="600"
+					frameborder="0"
+					gesture="media"
+					allow="encrypted-media"
+					allowfullscreen=""></iframe>
+			</div>
+		</div>
+	</body>
+</html>
