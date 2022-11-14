@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Result</title>
+		<style>
+			body {
+				background-color: wheat;
+			}
+			.main-container {
+				background: #e27d60;
+				width: 80%;
+				margin: 0 auto;
+				min-height: 95vh;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+			}
+			h1 {
+				text-align: center;
+				color: white;
+				text-shadow: 1px 1px black;
+			}
+			img {
+				width: 70%;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="main-container">
+			<img src="{{result}}" />
+			<h1>{{ output }}</h1>
+		</div>
+	</body>
+</html>

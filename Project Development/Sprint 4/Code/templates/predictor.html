@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Predictor</title>
+		<style>
+			body {
+				background-color: wheat;
+			}
+			.main-container {
+				background: #e27d60;
+				width: 80%;
+				margin: 0 auto;
+				min-height: 95vh;
+			}
+			header {
+				padding: 2em;
+			}
+			h1 {
+				padding: 0;
+				margin: 0;
+				color: white;
+				text-align: center;
+				text-shadow: 2px 2px #ff0000;
+			}
+			form {
+				display: flex;
+				flex-direction: column;
+				margin: 3em;
+				width: 50%;
+				margin: 0 auto;
+				padding: 2em;
+				background-color: wheat;
+			}
+			label {
+				margin-top: 1em;
+			}
+			.submit {
+				width: 30%;
+				padding: 5%;
+				margin: 1em auto;
+				background-color: #e27d6091;
+				box-shadow: 2px 2px black;
+				border: none;
+				border-radius: 1em;
+				color: white;
+				font-weight: bold;
+				text-shadow: 1.5px 1.5px black;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="main-container">
+			<h1>Please Fill in the details</h1>
+			<form name="form" , method="POST" , style="text-align: center">
+				<label for="text" name="name"> Name: </label>
+				<input type="text" name="name" />
+
+				<label for="text"> Age: </label>
+				<input type="text" name="age" />
+
+				<label for="sex"> Sex: </label>
+				<select name="sex">
+					<option value="1">Male</option>
+					<option value="0">Female</option>
+				</select>
+
+				<label for="cp"> Chest pain type: </label>
+				<select name="cp">
+					<option value="1">Typical angina</option>
+					<option value="2">Atypical angina</option>
+					<option value="3">Non-anginal pain</option>
+					<option value="4">Asymptomatic</option>
+				</select>
+
+				<label for="trestbps"> Resting Blood Sugar: </label>
+				<input type="text" name="trestbps" />
+
+				<label for="chol"> Serum Cholestoral in mg/dl: </label>
+				<input type="text" name="chol" />
+
+				<label for="fbs"> Fasting Blood Sugar higher than 120 mg/dl: </label>
+				<select name="fbs">
+					<option value="1">True</option>
+					<option value="0">False</option>
+				</select>
+
+				<label for="restecg"> Resting Electrocardiographic Results: </label>
+				<select name="restecg">
+					<option value="0">Normal</option>
+					<option value="1">ST-T Wave abnormality</option>
+					<option value="2">
+						Probable or definite left ventricular hypertrophy
+					</option>
+				</select>
+
+				<label for=""> Maximum Heart Rate Achieved: </label>
+				<input type="text" name="thalach" />
+
+				<label for="exang"> Exercise Induced Angina: </label>
+				<select name="exang">
+					<option value="1">Yes</option>
+					<option value="0">No</option>
+				</select>
+
+				<label for=""> Oldpeak: </label>
+				<input type="text" name="oldpeak" />
+
+				<label for="slope"> Heart Rate Slope: </label>
+				<select name="slope">
+					<option value="0">Upsloping</option>
+					<option value="1">Flatsloping</option>
+					<option value="2">Downsloping</option>
+				</select>
+
+				<label for=""> Number of Major Vessels Colored by Flourosopy: </label>
+				<input type="text" name="ca" />
+
+				<label for="thal"> Thalium Stress Result: </label>
+				<select name="thal">
+					<option value="3">normal</option>
+					<option value="6">Fixed defect</option>
+					<option value="7">Reversable defect</option>
+				</select>
+
+				<input class="submit" type="submit" value="Get Predictions" />
+			</form>
+		</div>
+	</body>
+</html>
